@@ -1,16 +1,18 @@
 <?php
 
 function getList(array $array): string {
-$html = '    <tr>
+    $html = "";
+    foreach($array as $payment)
+$html .= '    <tr>
     <td width="50" class="ps-3">
     </td>
     <td>
-        <time datetime="2023-07-10" class="d-block fst-italic fw-light">'. .'</time>
-        '. .'
+        <time datetime="2023-07-10" class="d-block fst-italic fw-light">'.$payment['date_transaction'].'</time>
+        '.$payment['name'].'
     </td>
     <td class="text-end">
         <span class="rounded-pill text-nowrap bg-warning-subtle px-2">
-            '. .'
+            '.$payment['amount'].'
         </span>
     </td>
     <td class="text-end text-nowrap">
@@ -22,10 +24,7 @@ $html = '    <tr>
         </a>
     </td>
 </tr>';
-
-
-return $html
-
+return $html;
 }
 
 ?>
