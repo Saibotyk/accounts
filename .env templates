@@ -1,0 +1,3 @@
+DB_HOST="your database"
+DB_USER="your name"
+DB_PASSWORD="your password"
