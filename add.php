@@ -1,6 +1,8 @@
 <?php 
 require "includes/_head.php";
 require "includes/_headerandnav.php"; 
+require "includes/_functions.php";
+verifyToken();
 ?>
 
 <div class="container">
@@ -32,16 +34,19 @@ require "includes/_headerandnav.php";
                         <label for="category" class="form-label">Catégorie</label>
                         <select class="form-select" name="category" id="category">
                             <option value="" selected>Aucune catégorie</option>
-                            <option value="1">Nourriture</option>
-                            <option value="2">Loisir</option>
-                            <option value="3">Travail</option>
-                            <option value="4">Voyage</option>
-                            <option value="5">Sport</option>
-                            <option value="6">Habitat</option>
-                            <option value="7">Cadeaux</option>
+                            <option value="1">Habitation</option>
+                            <option value="2">Travail</option>
+                            <option value="3">Cadeau</option>
+                            <option value="4">Numérique</option>
+                            <option value="5">Alimentation</option>
+                            <option value="6">Voyage</option>
+                            <option value="7">Loisir</option>
+                            <option value="8">Voiture</option>
+                            <option value="9">Santé</option>
                         </select>
                     </div>
                     <div class="text-center">
+                        <input type="hidden" name="token" value="<?= $_SESSION['myToken'] ?>">
                         <button type="submit" class="btn btn-primary btn-lg">Ajouter</button>
                     </div>
                 </form>

@@ -1,6 +1,6 @@
 
 <div class="position-fixed bottom-0 end-0 m-3">
-    <a href="add.php" class="btn btn-primary btn-lg rounded-circle">
+    <a href="add.php?token=<?=$_SESSION['myToken']?>" class="btn btn-primary btn-lg rounded-circle">
         <i class="bi bi-plus fs-1"></i>
     </a>
 </div>
@@ -10,6 +10,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
