@@ -22,5 +22,6 @@ echo getList($payments);
 
 
 
+require "includes/_navbar.php";
 require "includes/_footer.php";
 ?>

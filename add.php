@@ -10,7 +10,7 @@ require "includes/_headerandnav.php";
             </div>
             <div class="card-body">
 
-                <form>
+                <form action="addPayment.php" method="POST">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nom de l'opération *</label>
                         <input type="text" class="form-control" name="name" id="name"
@@ -49,3 +49,5 @@ require "includes/_headerandnav.php";
             </div>
         </section>
     </div>
+
+    <?php require "includes/_footer.php"; ?>
